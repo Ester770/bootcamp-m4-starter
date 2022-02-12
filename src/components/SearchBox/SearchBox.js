@@ -18,6 +18,7 @@ class SearchBox extends Component {
                 searchLine: this.state.searchLine
             }
         });
+        console.log("submit handler ", this.state.search );
     }
 
 
