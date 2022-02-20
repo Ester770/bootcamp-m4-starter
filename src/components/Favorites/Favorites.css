@@ -31,3 +31,11 @@
     opacity: 0.9;
     transition: all 0.2s linear;
 }
+.favorites__save_link{
+      border: none;
+      background-color: #496DDB;
+      padding: 10px 15px;
+      color: #ffffff;
+      font-size: 14px;
+      text-decoration: none;
+}

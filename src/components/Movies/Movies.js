@@ -31,13 +31,16 @@ class Movies extends Component {
 
     render() {
         return (
-            <ul className="movies">
-                {this.state.movies.map((movie) => (
-                    <li className="movies__item" key={movie.imdbID}>
-                        <MovieItem {...movie} />
-                    </li>
-                ))}
-            </ul>
+            <>
+                {this.state.movies ?
+                    <ul className="movies">
+                        {this.state.movies.map((movie) => (
+                            <li className="movies__item" key={movie.imdbID}>
+                                <MovieItem {...movie} />
+                            </li>
+                        ))}
+                    </ul> : <p>По вашему запросу ничего не найдено</p>}
+            </>
         );
     }
 }
